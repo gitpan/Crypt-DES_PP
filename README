@@ -1,0 +1,11 @@
+This is a pure Perl implementation of the DES algorithm, aka DEA.
+It's interface is identical to that of Crypt::DES.  You can therefore
+use it as a plug-in replacement for Crypt::DES.
+
+Try ``perldoc lib/Crypt/DES_PP.pm'' (before installation and from
+this directory) or ``perldoc Crypt::DES_PP'' (after installation)
+to learn more about the module.
+
+Have fun with it.
+
+Guido Flohr (guido@imperia.net)

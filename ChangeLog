@@ -1,0 +1,83 @@
+2000-10-11  Guido Flohr  <guido@freemint.de>
+
+	* DES_PP.ppm: Bumped version number to 0.06.
+
+	* test.pl:
+	Eval dependencies to other modules in single quotes, not in curly
+	braces to avoid the test to fail if Crypt::CBC is not present.
+
+	* t/cbcref.t:
+	Don't print a test number for bulk output when Crypt::CBC is not
+	present, so that Test::Harness doesn't get confused.
+
+2000-10-08  Guido Flohr  <guido@freemint.de>
+
+	* DES_PP.ppm: Bumped version number to 0.05.
+
+	* MANIFEST: Added lib/Crypt/.cvsignore.
+
+	* lib/Crypt/.cvsignore: Initial revision.
+
+	* lib/Crypt/DES_PP.pod: Moved to DES_PP.ppm in top-level directory.
+
+	* DES_PP.ppm: Moved from lib/Crypt/DES_PP.pod here.
+
+	* test-xs: Initial revision.
+
+	* test.pl: Added benchmarks to run against XS version in CBC mode.
+
+	* Makefile.PL:
+	Changed suffix rule to a full rule for building lib/Crypt/DES_PP.pm.
+
+	* MANIFEST:
+	Moved lib/Crypt/DES_PP.pod to DES_PP.pm, renamed test-xs.pl to test-xs.
+
+	* test-xs.pl: Renamed to test-xs.
+
+	* lib/Crypt/DES_PP.pod: Bumped version number to 0.03.
+
+	* lib/Crypt/DES_PP.pod: Initial revision.
+
+	* lib/Crypt/DES_PP.pm:
+	Removed secondary file DES_PP.pm from CVS repository.
+
+	* Makefile.PL:
+	Added suffix rule to build .pm files from .pod (not very clean, simply
+	run the .pod through cpp).
+
+	* MANIFEST:
+	Added preprocessor source lib/Crypt/DES_PP.pod to improve performance.
+
+	* t/cbcref.t: COPYING has been renamed to COPYING.LIB.
+
+	* t/00base.t, t/.cvsignore, t/cbcref.t, t/cert.t, t/random.t, t/randomcache.t:
+	Initial revision.
+
+	* lib/Crypt/DES_PP.pm:
+	Bumped version number to 0.02 and added documentation.
+
+	* test.pl:
+	Completely changed.  The original version can still be found as
+	test-xs.pl.
+
+	* README: Changed e-mail address.
+
+	* MANIFEST:
+	Added .cvsignore, renamed COPYING to COPYING.LIB, added README and
+	subdirectory t.
+
+	* COPYING.LIB: Renamed from COPYING.
+
+	* COPYING: Renamed to COPYING.LIB.
+
+	* .cvsignore, test-xs.pl: Initial revision.
+
+2000-09-21  Guido Flohr  <guido@freemint.de>
+
+	* test.pl: Manipulated @INC so that script can also run stand-alone.
+
+	* test.pl: Added modification notice to file header.
+
+	* COPYING, README, MANIFEST, Makefile.PL, lib/Crypt/DES_PP.pm, test.pl:
+	New file.
+
