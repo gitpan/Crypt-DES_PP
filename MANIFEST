@@ -1,7 +1,7 @@
 .cvsignore
 COPYING.LIB
 ChangeLog
-DES_PP.ppm
+DES_PP.ppp
 lib/Crypt/.cvsignore
 lib/Crypt/DES_PP.pm
 MANIFEST

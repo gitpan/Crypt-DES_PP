@@ -1,3 +1,61 @@
+2000-10-23  Guido Flohr  <guido@freemint.de>
+
+	* MANIFEST: Renamed DES_PP.ppm to DES_PP.ppp.
+
+	* DES_PP.ppp: Bumped version number to 0.07.
+	Renamed DES_PP.ppm to DES_PP.ppp.
+
+	* DES_PP.ppm, Makefile.PL:
+	Renamed DES_PP.ppm (oops, used by Activestate Perl) to DES_PP.ppp
+	(like pre-process perl).
+	Makefile now retrieves version information directly from DES_PP.ppp.
+	Filter out preprocessor line numbers from output so that Perl reports
+	linenumbers correctly when a warning or error occurs.
+
+	* DES_PP.ppm:
+	Fixed typo/thinko (don't remember) in crypt().  Should now run
+	on big-endian machines, too.  Thanks to schinder@pobox.com for
+	the bug report, thanks to Frank Naumann (fnaumann@freemint.de)
+	for giving me access to his big-endian MiNT machine for debugging.
+
+2000-10-23  Guido Flohr  <guido@freemint.de>
+
+	* DES_PP.ppp: Bumped version number to 0.07.
+	Renamed DES_PP.ppm to DES_PP.ppp.
+
+	* DES_PP.ppm, Makefile.PL:
+	Renamed DES_PP.ppm (oops, used by Activestate Perl) to DES_PP.ppp
+	(like pre-process perl).
+	Makefile now retrieves version information directly from DES_PP.ppp.
+	Filter out preprocessor line numbers from output so that Perl reports
+	linenumbers correctly when a warning or error occurs.
+
+	* DES_PP.ppm:
+	Fixed typo/thinko (don't remember) in crypt().  Should now run
+	on big-endian machines, too.  Thanks to schinder@pobox.com for
+	the bug report, thanks to Frank Naumann (fnaumann@freemint.de)
+	for giving me access to his big-endian MiNT machine for debugging.
+
+2000-10-23  Guido Flohr  <guido@freemint.de>
+
+	* DES_PP.ppm:
+	Fixed typo/thinko (don't remember) in crypt().  Should now run
+	on big-endian machines, too.  Thanks to schinder@pobox.com for
+	the bug report, thanks to Frank Naumann (fnaumann@freemint.de)
+	for giving me access to his big-endian MiNT machine for debugging.
+
+2000-10-11  Guido Flohr  <guido@freemint.de>
+
+	* DES_PP.ppm: Bumped version number to 0.06.
+
+	* test.pl:
+	Eval dependencies to other modules in single quotes, not in curly
+	braces to avoid the test to fail if Crypt::CBC is not present.
+
+	* t/cbcref.t:
+	Don't print a test number for bulk output when Crypt::CBC is not
+	present, so that Test::Harness doesn't get confused.
+
 2000-10-11  Guido Flohr  <guido@freemint.de>
 
 	* DES_PP.ppm: Bumped version number to 0.06.

@@ -1,11 +1,10 @@
-# 1 "DES_PP.ppm"
 
 #DES_PP.pm - Pure perl implementation of DES.
 
 
 
-#The master file for the module is DES_PP.ppm which needs to be run through
-#the preprocessor.  Please edit DES_PP.ppm if you need to modify!
+#The master file for the module is DES_PP.ppp which needs to be run through
+#the preprocessor.  Please edit DES_PP.ppp if you need to modify!
 
 package Crypt::DES_PP;
 
@@ -20,7 +19,7 @@ require Exporter;
 @ISA = qw (Exporter);
 @EXPORT = qw ();
 @EXPORT_OK = qw ();
-$VERSION = '0.06';
+$VERSION = '0.07';
 
 use constant BLKSIZE => 8;
 
@@ -443,7 +442,6 @@ sub expand_key ($) {
 
 
 
-# 456 "DES_PP.ppm"
 
 sub crypt ($$$) {
     my ($input, $ks, $encrypt) = @_;
@@ -468,7 +466,7 @@ sub crypt ($$$) {
     $l &= 0xffffffff;
     $r &= 0xffffffff;
     
-    my @s = unpack ("L32", $ks);
+    my @s = unpack ("V32", $ks);
     my $i;
     
     if ($encrypt) {
@@ -580,3 +578,4 @@ license version 2, see the file ``COPYING.LIB''.
 Crypt::CBC(3), Crypt::DES(3), perl(1).
 
 =cut
+
